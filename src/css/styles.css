@@ -13,7 +13,7 @@
   font-family: 'Manrope', sans-serif;
   --main-dur-func-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FCF9F9;
-  /* background-color: #1C2225; */
+  background-color: #1C2225;
   --elements-color: #ECD979;
 }
 
