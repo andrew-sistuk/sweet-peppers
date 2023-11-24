@@ -1,0 +1,121 @@
+.header {
+  padding: 20px 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 375px;
+}
+
+.header-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-link {
+  margin-right: 60px;
+  outline: transparent;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  display: none;
+}
+
+.header-nav-link {
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  text-transform: uppercase;
+  transition: color var(--main-dur-func-transition);
+}
+
+.header-nav-link:focus {
+  color: #ecd979;
+  outline: transparent;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-contact-phone-link {
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  transition: border-color var(--main-dur-func-transition);
+  display: none;
+}
+
+.header-contact-phone-link:focus {
+  border-color: #ecd979;
+  outline: transparent;
+  outline-offset: 2px;
+}
+
+.header-contacts-icon-list {
+  display: flex;
+  gap: 12px;
+}
+
+.header-contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: rgba(252, 249, 249, 0.1);
+  line-height: 0;
+  transition: border-color var(--main-dur-func-transition),
+    background-color var(--main-dur-func-transition);
+}
+
+.header-contacts-link:focus {
+  outline: transparent;
+  outline-offset: 2px;
+  border-color: #ecd979;
+  background-color: inherit;
+}
+
+.header-soc-icon {
+  fill: rgba(252, 249, 249, 1);
+  opacity: 0.8;
+}
+
+.header-menu-btn {
+  background-color: inherit;
+  line-height: 0;
+  border: none;
+  outline: none;
+}
+
+.header-menu-btn-icon {
+  stroke: #ecd979;
+}
+
+.test-section {
+  background-color: blueviolet;
+  height: 200px;
+}
