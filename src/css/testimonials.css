@@ -47,6 +47,7 @@
     width: 100%;
 }
 
+/* MOBILE HIDDEN REVIEW  */
 @media screen and (max-width:768px) {
     .testimonials-list-item-1-hidden,
     .testimonials-list-item-2-hidden {
@@ -57,5 +58,86 @@
 @media screen and (min-width:375px) and (max-width: 767px) {
     .testimonials-section {
         width: 335px;
+    }
+}
+
+
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    /* TABLET HIDDEN REVIEW  */
+    .testimonials-list-item-2-hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials-section {
+        width: 704px;
+        padding: 100px 0;
+
+        /* потрібно дописати медіа запити в main на 
+        container > padding: left+right  під кожен пристрій */
+    }
+
+    .testimonials-list-item-content {
+        padding: 54px 18px 18px;
+    }
+
+    .testimonials-list-item {
+        min-width: 336px;
+    }
+
+    .testimonials-title {
+        font-size: 44px;
+        line-height: 1.45;
+    }
+
+    .testimonials-list {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .testimonials-list-item {
+        width: 336px;
+    }
+}
+
+
+/* DESKTOP 1280 */
+
+@media screen and (min-width: 1280px) {
+    .testimonials-section {
+        width: 1080px;
+        padding: 150px 0;
+
+        /* потрібно дописати медіа запити в main на 
+        container > padding: left+right  під кожен пристрій */
+    }
+
+    .testimonials-item-text {
+        font-size: 16px;
+    }
+
+    .testimonials-list {
+        gap: 26px;
+    }
+
+    .testimonials-list-item {
+        width: 343px;
+    }
+}
+
+/* DESKTOP 1440 */
+@media screen and (min-width: 1440px) {
+    .testimonials-section {
+        width: 1240px;
+    }
+
+    .testimonials-list-item {
+        width: 396px;
     }
 }
