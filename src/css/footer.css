@@ -1,0 +1,58 @@
+/* Footer-mobile */
+
+.footer-section{
+    padding-top: 40px;
+    padding-bottom: 292px;
+    border-top: 1px solid rgba(252, 249, 249, 0.10);
+    background-image: url(../images/elements-footer-mobil-bg.png);
+    max-width: 375px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/* Изображение 2х для Footer-mobile */
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-devide-pixel-ratio: 2) {
+    .footer-section {
+        background-image: url(../images/elements-footer-mobil-bg@2x.png)
+    }
+}
+
+.footer-list{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-list-second-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-link{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.28;
+        text-transform: uppercase;
+}
+
+.footer-title{
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+}
+
+.main-word-footer{
+    color: var(--white, #ECD979);
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+}
