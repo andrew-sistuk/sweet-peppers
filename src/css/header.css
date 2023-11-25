@@ -7,7 +7,6 @@ body {
   padding-bottom: 24px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: #1c2225;
 }
 
@@ -97,51 +96,6 @@ body {
 
 .header-menu-btn-icon {
   stroke: var(--elements-color);
-}
-
-.test-section {
-  background-color: #1c2225;
-  height: 500px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.menu {
-  position: absolute;
-  background-color: var(--elements-color);
-  width: 274px;
-  height: 812px;
-  padding: 20px;
-  top: 0;
-  right: 0;
-  padding: 20px;
-}
-
-.menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-contact-phone-link {
-  display: block;
-  padding: 12px 20px;
-  font-style: normal;
-  color: #1c2225;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.16;
-  text-transform: uppercase;
-  border-radius: 15px;
-  border: 1px solid rgba(28, 34, 37, 0.1);
-  transition: border-color var(--main-dur-func-transition);
-}
-
-.header-contact-phone-link:hover,
-.header-contact-phone-link:focus {
-  border-color: var(--elements-color);
-  outline: transparent;
-  outline-offset: 2px;
 }
 
 /* ============END STRETCHING MOBILE========= */
