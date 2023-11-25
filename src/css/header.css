@@ -1,12 +1,17 @@
-.header {
-  padding: 20px 0;
+body {
+  background-color: #ababab;
+}
+
+.header-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: auto;
   margin-left: auto;
-  width: 375px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: #1c2225;
 }
 
 .header-container {
-  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,14 +23,10 @@
 }
 
 .header-logo-link {
-  margin-right: 60px;
   outline: transparent;
 }
 
 .header-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 25px;
   display: none;
 }
 
@@ -38,8 +39,9 @@
   transition: color var(--main-dur-func-transition);
 }
 
+.header-nav-link:hover,
 .header-nav-link:focus {
-  color: #ecd979;
+  color: var(--elements-color);
   outline: transparent;
 }
 
@@ -47,30 +49,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
 }
 
 .header-contact-phone-link {
-  display: flex;
-  padding: 14px 28px;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  color: #fcf9f9;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42;
-  text-transform: uppercase;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
-  transition: border-color var(--main-dur-func-transition);
   display: none;
-}
-
-.header-contact-phone-link:focus {
-  border-color: #ecd979;
-  outline: transparent;
-  outline-offset: 2px;
 }
 
 .header-contacts-icon-list {
@@ -92,15 +75,16 @@
     background-color var(--main-dur-func-transition);
 }
 
+.header-contacts-link:hover,
 .header-contacts-link:focus {
   outline: transparent;
   outline-offset: 2px;
-  border-color: #ecd979;
-  background-color: inherit;
+  border-color: var(--elements-color);
+  background-color: transparent;
 }
 
 .header-soc-icon {
-  fill: rgba(252, 249, 249, 1);
+  fill: #fcf9f9;
   opacity: 0.8;
 }
 
@@ -112,10 +96,152 @@
 }
 
 .header-menu-btn-icon {
-  stroke: #ecd979;
+  stroke: var(--elements-color);
 }
 
 .test-section {
-  background-color: blueviolet;
-  height: 200px;
+  background-color: #1c2225;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+.menu {
+  position: absolute;
+  background-color: var(--elements-color);
+  width: 274px;
+  height: 812px;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-contact-phone-link {
+  display: block;
+  padding: 12px 20px;
+  font-style: normal;
+  color: #1c2225;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.16;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
+  transition: border-color var(--main-dur-func-transition);
+}
+
+.header-contact-phone-link:hover,
+.header-contact-phone-link:focus {
+  border-color: var(--elements-color);
+  outline: transparent;
+  outline-offset: 2px;
+}
+
+/* ============END STRETCHING MOBILE========= */
+
+@media screen and (min-width: 375px) {
+  .header-section {
+    width: 375px;
+  }
+}
+
+/* ===========END MOBILE STYLES============ */
+
+/* ============TABLET STYLES============== */
+
+@media screen and (min-width: 768px) {
+  .header-section {
+    width: 768px;
+  }
+
+  .header-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header-contacts {
+    gap: 20px;
+  }
+
+  .test-section {
+    width: 768px;
+  }
+}
+
+/* ============END TABLET STYLES============== */
+
+/* ============DESKTOP 1280 STYLES============= */
+
+@media screen and (min-width: 1280px) {
+  .header-section {
+    width: 1280px;
+  }
+
+  .header-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .header-logo-link {
+    margin-right: 60px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .header-contact-phone-link {
+    display: block;
+    padding: 14px 28px;
+    font-style: normal;
+    color: #fcf9f9;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    transition: border-color var(--main-dur-func-transition);
+  }
+
+  .header-contact-phone-link:hover,
+  .header-contact-phone-link:focus {
+    border-color: var(--elements-color);
+    outline: transparent;
+    outline-offset: 2px;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .test-section {
+    width: 1280px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+/* ============END DESKTOP 1280 STYLES============= */
+
+/* =============DESKTOP 1440 STYLES=============== */
+
+@media screen and (min-width: 1440px) {
+  .header-section {
+    width: 1440px;
+  }
+
+  .test-section {
+    width: 1440px;
+  }
+}
+/* ==========END DESKTOP 1440 STYLES=============== */
