@@ -2,9 +2,7 @@
 
 @media screen and (min-width: 320px) {
     .container {
-        width: 375px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 320px;
     }
 
     .page-collection {
@@ -37,6 +35,8 @@
     }
         
     .collection-img {
+        /* width: 335px;
+        height: 400px; */
         border-radius: 4px;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
@@ -72,5 +72,82 @@
     .price-span {
         text-transform: uppercase;
     }
+
+}
+
+/* tablet style collection */
+
+@media screen and (min-width:768px) {
+
+    .container {
+        width: 768px;
+    }
+
+    .page-collection {
+        padding-left: 32px;
+        padding-right: 32px;
+        background-image: #ECD979, url(../images/elements-collection-tablet-bg.png)
+    }
+
+    .collection-title {
+        text-align: center;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 1.45;
+        letter-spacing: -0.03em;
+        }
+
+    /* .collection-img {
+        width: 342px;
+        height: 430px;
+    } */
+
+    .collection-name{
+        padding-top: 50px;
+    }
+
+    .collection-menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        row-gap: 20px;
+        max-width: 1279px;
+    }
+
+    .collection-item {
+        width: calc((100% - 48px) / 2);
+    }
+
+    .collection-shirt-name {
+        font-size: 18px;
+    }
+
+    .price {
+        font-style: 18px;
+    }
+
+}
+
+/* desktop 1280 style collection */
+
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+
+    .page-collection {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: #ECD979, url(../images/elements-collection-bg-desktop1280.png)
+    }
+    
+    
+    
+
+
+
+
+
 
 }
