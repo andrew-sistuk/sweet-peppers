@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyshyvanka Vibes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load src="partials/header.html" />
+    <!-- <load src="partials/modal.html" /> -->
+    <main>
+      <load src="partials/hero.html" />
+      <load src="partials/about.html" />
+      <load src="partials/collection.html" />
+      <load src="partials/order.html" />
+      <load src="partials/testimonials.html" />
+    </main>
+    <load src="partials/footer.html" />
+
+    <!-- <section>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      Path to images as from index.html file
+      <img src="./img/javascript.svg" alt="" />
+    </section> -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
+   <!---HERO-->
+
+  <div class="mob-menu">
+    <button type="button" class="menu-close-btn">
+      <svg class="menu-btn-icon" width="32" height="32">
+        <use href="/symbol-defs.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+  
+    <main>
+      <section class="hero">
+    <div class="container hero-container">
+        <div class="hero-header">
+            <h1 class="hero-title">Reviving the traditional <span class="hero-span-ukrainian">Ukrainian</span> artistry
+                in
+                every
+                stitch.
+            </h1>
+            <a href="#order" class="hero-btn">Order
+                <svg class="hero-icon-btn" width="26" height="16">
+                    <use href="/symbol-defs.svg#icon-arrow-button"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-handmade">
+            <svg class="hero-handmade-svg" width="52" height="51">
+                <use href="/symbol-defs.svg#icon-hero-star"></use>
+            </svg>
+            <p class="hero-handmade-text">all embroidery is made by hand</p>
+        </div>
+        <div class="hero-picture">
+            <picture>
+                <source srcset="/src/images/hero-desktop.webp 1x, /src/images/hero-desktop@2x.webp 2x"
+                    media="(min-width: 1440px)">
+                <source srcset="/src/images/hero-tablet.webp 1x, /src/images/hero-desktop@2x.webp 2x"
+                    media="(min-width: 1280px)">
+                <source srcset="/src/images/hero-mobil.webp 1x, /src/images/hero-mobil@2x.webp 2x"
+                    media="(max-width: 768px)">
+                <img src="/src/images/hero-desktop.webp" alt="girl" width="392" height="545" class="hero-img" />
+            </picture>
+            <picture>
+                <source srcset="/src/images/hero-ukr-desktop-1440.webp 1x, /src/images/hero-ukr-desktop-1440@2x.webp 2x"
+                    media="(min-width: 1080px)">
+                <source srcset="/src/images/hero-ukr-desktop-1280.webp 1x, /src/images/hero-ukr-desktop-1280@2x.webp 2x"
+                    media="(min-width: 768px)">
+                <source srcset="/src/images/hero-ukr-tablet.webp 1x, /src/images/hero-ukr-tablet@2x.webp 2x"
+                    media="(max-width: 767px)">
+                <img src="/src/images/hero-ukr-desktop-1440.webp" alt="ukraine" width="157" height="191"
+                    class="hero-img-ukraine">
+            </picture>
+        </div>
+    </div>
+</section>
