@@ -1,14 +1,38 @@
 /* mobile style collection */
 
-@media screen and (min-width: 320px) {
-    .container {
-        width: 320px;
-    }
+.page-collection {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url(../images/elements-collection-mobil-bg.png);
+    background-repeat: no-repeat;
+    background-position: left 257px;
+}
 
+@media screen and (min-width: 375px) and (min-resolution:192dpi),
+screen and(min-resolution: 2dppx),
+screen and(min-device-pixel-ratio:2) {
     .page-collection {
-        padding-left: 20px;
-        padding-right: 20px;
-        background-image: #ECD979, url(../images/elements-collection-mobil-bg.png)
+        background-image: url('../images/elements-collection-mobil-bg@2x.png');
+    }
+}
+
+
+/* @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px),
+        screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+            .page-collection {
+                background-image: url('../images/elements-collection-mobil-bg@2x.png');
+                background-repeat: no-repeat;
+                background-position: left 257px;
+            }
+        } */
+
+    @media screen and (min-width: 375px) {
+        .page-collection {
+            width: 375px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .collection-title {
@@ -25,6 +49,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-content: center;
         justify-content: center;
         gap: 20px;
     }
@@ -35,10 +60,8 @@
     }
         
     .collection-img {
-        /* width: 335px;
-        height: 400px; */
+        max-width: 335px;
         border-radius: 4px;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
 
     .collection-name {
@@ -73,81 +96,121 @@
         text-transform: uppercase;
     }
 
-}
-
 /* tablet style collection */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
 
-    .container {
-        width: 768px;
-    }
+.page-collection {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background: url(../images/elements-collection-tablet-bg.png);
+    background-repeat: no-repeat;
+    background-position: -50% 296px;
+    /* background-size: 338px 300px; */
+}
 
+/* @media screen and (min-width: 768px) and (min-resolution:192dpi),
+screen and(min-resolution: 2dppx),
+screen and(min-device-pixel-ratio:2) {
     .page-collection {
-        padding-left: 32px;
-        padding-right: 32px;
-        background-image: #ECD979, url(../images/elements-collection-tablet-bg.png)
+        background-image: url('../images/elements-collection-tablet-bg@2x.png');
+        background-size: 338px 300px;
     }
+} */
 
-    .collection-title {
-        text-align: center;
-        font-size: 44px;
-        font-weight: 500;
-        line-height: 1.45;
-        letter-spacing: -0.03em;
-        }
 
-    /* .collection-img {
-        width: 342px;
-        height: 430px;
-    } */
+.collection-title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+}
 
-    .collection-name{
-        padding-top: 50px;
-    }
+.collection-img {
+    width: 342px;
+}
 
-    .collection-menu {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        row-gap: 20px;
-        max-width: 1279px;
-    }
+.collection-menu {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    row-gap: 20px;
+    max-width: 1279px;
+}
 
-    .collection-item {
-        width: calc((100% - 48px) / 2);
-    }
+.collection-item {
+    width: calc((100% - 40px) / 2);
+}
 
-    .collection-shirt-name {
-        font-size: 18px;
-    }
+.collection-shirt-name {
+    font-size: 18px;
+    width: 342px;
+}
 
-    .price {
-        font-style: 18px;
-    }
+.price {
+    font-style: 18px;
+}
 
 }
+
 
 /* desktop 1280 style collection */
 
-@media screen and (min-width:1280px) {
-    .container {
-        width: 1280px;
+    @media screen and (min-width: 1280x) {
+
+        .page-collection {
+            width: 1280px;
+            padding-left: 100px;
+            padding-right: 98px;
+            background: url(../images/elements-collection-bg-desktop1280.png);
+            background-repeat: no-repeat;
+            background-position: left 157px;
+            /* background-size: 338px 300px; */
+        }
+
+    @media screen and (min-width: 1280px) and (min-resolution:192dpi),
+            screen and(min-resolution: 2dppx),
+            screen and(min-device-pixel-ratio:2) {
+                .page-collection {
+                    background-image: url('../images/collection-06-desktop-1280@2x.webp');
+                    }
+            }
+
+    .collection-item {
+        width: calc((100% - 40px) / 3);
     }
 
-    .page-collection {
-        padding-left: 20px;
-        padding-right: 20px;
-        background-image: #ECD979, url(../images/elements-collection-bg-desktop1280.png)
+
+    .collection-name {
+        width: 347px;
     }
-    
-    
-    
 
 
+}
 
 
+/* desktop 1440 style collection */
 
+    @media screen and (min-width: 1440x) {
+
+        .page-collection {
+            width: 1440px;
+            padding-left: 100px;
+            padding-right: 100px;
+            background: url(../images/elements-collection-bg-desktop1440.png);
+            background-repeat: no-repeat;
+            background-position: left 263px;
+        }
+
+        /*  @media screen and (min-width: 1440px) and (min-resolution:192dpi),
+                screen and (min-resolution: 2dppx) and (min-width: 1280px),
+                screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+                .page-collection {
+                    background-image: url('../images/elements-collection-bg-desktop1440@2x.png');
+                    }
+                } */
 
 }
