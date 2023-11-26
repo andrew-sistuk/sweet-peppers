@@ -1,112 +1,99 @@
-/* mobile style collection */
+
+/* ============= MOBILE style collection ===============*/
+
+.container {
+    width: 375px;
+}
 
 .page-collection {
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background: url(../images/elements-collection-mobil-bg.png);
     background-repeat: no-repeat;
     background-position: left 257px;
 }
 
-@media screen and (min-width: 375px) and (min-resolution:192dpi),
-screen and(min-resolution: 2dppx),
-screen and(min-device-pixel-ratio:2) {
+/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .page-collection {
         background-image: url('../images/elements-collection-mobil-bg@2x.png');
     }
+} */
+
+.collection-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: -0.03em;
+    color: #FCF9F9;
+        }
+
+.collection-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.collection-item {
+    border-radius: 4px;
+}
+
+.collection-name {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.collection-shirt-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-spacing: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FCF9F9;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: rgba(252, 249, 249, 0.40);
+}
+    
+.price-span {
+    text-transform: uppercase;
 }
 
 
-/* @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-        screen and (min-resolution: 2dppx) and (max-width: 767px),
-        screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-            .page-collection {
-                background-image: url('../images/elements-collection-mobil-bg@2x.png');
-                background-repeat: no-repeat;
-                background-position: left 257px;
-            }
-        } */
+/*=============== TABLET style collection =================*/
 
-    @media screen and (min-width: 375px) {
-        .page-collection {
-            width: 375px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
 
-    .collection-title {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 1.38;
-        letter-spacing: -0.03em;
-        color: #FCF9F9;
-    }
+@media (min-width: 768px) {
 
-    .collection-menu {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .collection-item {
-        position: relative;
-        overflow: hidden;
-    }
-        
-    .collection-img {
-        max-width: 335px;
-        border-radius: 4px;
-    }
-
-    .collection-name {
-        padding-top: 18px;
-        display: flex;
-        width: 335px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .collection-shirt-name {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #FCF9F9;
-        }
-
-    .price {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: 0.05em;
-        color: rgba(252, 249, 249, 0.40);
-    }
-
-    .price-span {
-        text-transform: uppercase;
-    }
-
-/* tablet style collection */
-
-@media screen and (min-width: 768px) {
+.container {
+    width: 768px;
+}
 
 .page-collection {
-    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     background: url(../images/elements-collection-tablet-bg.png);
     background-repeat: no-repeat;
-    background-position: -50% 296px;
+    background-position: left 296px;
     /* background-size: 338px 300px; */
 }
 
@@ -128,17 +115,12 @@ screen and(min-device-pixel-ratio:2) {
     letter-spacing: -0.03em;
 }
 
-.collection-img {
-    width: 342px;
-}
-
 .collection-menu {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
     row-gap: 20px;
-    max-width: 1279px;
 }
 
 .collection-item {
@@ -148,6 +130,9 @@ screen and(min-device-pixel-ratio:2) {
 .collection-shirt-name {
     font-size: 18px;
     width: 342px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-spacing: nowrap;
 }
 
 .price {
@@ -157,42 +142,49 @@ screen and(min-device-pixel-ratio:2) {
 }
 
 
-/* desktop 1280 style collection */
+/*=============== DEKSTOP 1280 style collection ==============*/
 
-    @media screen and (min-width: 1280x) {
 
-        .page-collection {
-            width: 1280px;
-            padding-left: 100px;
-            padding-right: 98px;
-            background: url(../images/elements-collection-bg-desktop1280.png);
-            background-repeat: no-repeat;
-            background-position: left 157px;
-            /* background-size: 338px 300px; */
-        }
+@media (min-width: 1280px) {
 
-    @media screen and (min-width: 1280px) and (min-resolution:192dpi),
-            screen and(min-resolution: 2dppx),
-            screen and(min-device-pixel-ratio:2) {
-                .page-collection {
-                    background-image: url('../images/collection-06-desktop-1280@2x.webp');
-                    }
-            }
+.container {
+    width: 1280px;
+}
+
+.page-collection {
+    padding-left: 100px;
+    padding-right: 98px;
+    background: url(../images/elements-collection-bg-desktop1280.png);
+    background-repeat: no-repeat;
+    background-position: left 157px;
+}
+
+/* @media screen and (min-width: 1280px) and (min-resolution:192dpi),
+    screen and(min-resolution: 2dppx),
+    screen and(min-device-pixel-ratio:2) {
+    .page-collection {
+        background-image: url('../images/elements-collection-bg-desktop1280@2x.png');
+    }
+} */
+
+    .collection-menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        row-gap: 20px;
+        max-width: 1440px;
+    }
 
     .collection-item {
         width: calc((100% - 40px) / 3);
     }
 
-
-    .collection-name {
-        width: 347px;
-    }
-
-
 }
 
 
-/* desktop 1440 style collection */
+/*================ DEKSTOP 1440 style collection =============*/
+
 
     @media screen and (min-width: 1440x) {
 
