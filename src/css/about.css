@@ -1,0 +1,133 @@
+.about-section{
+padding-top: 2px;
+padding-bottom: 60px;
+border-radius: 4px;
+background: url(../images/about-mobile-bg.png);
+background-position: right bottom;
+background-repeat: no-repeat;
+margin: 0 auto;
+}
+
+.about-text{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.about-title {
+    color: #fcf9f9;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+    margin-bottom: 40px;
+}
+
+.about-paragraf-first {
+    color: rgba(252, 249, 249, 0.40);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.56px; 
+    margin-bottom: 20px;
+}
+
+.about-paragraf-second {
+    color: rgba(252, 249, 249, 0.40);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    margin-bottom: 50px;
+}
+
+.about-picture-img {
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 375px) {
+    .about-section {
+        width: 335px;
+    }
+}
+
+/* Tablet  */
+@media screen and (min-width: 768px) {
+.about-section {
+    width: 704px;
+}
+
+.about-title{
+    font-size: 44px;
+    line-height: 64px;
+    letter-spacing: -1.32px;
+}
+
+.about-paragraf-first{
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+}
+
+.about-paragraf-second{
+    font-size: 16px;
+    letter-spacing: -0.64px;
+
+}
+
+.about-picture-img{
+    width: 704px;
+    height: 545px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+    .about-section {
+        padding: 0 100px;
+        width: 1280px;
+    }
+
+    .about-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    }
+
+    .about-text {
+    width: 436px;
+    margin: 45.5px 0px 45.5px 0;
+    }
+
+    .about-title {
+    margin-bottom: 40px;
+    }
+
+    .about-paragraf-first {
+    margin-bottom: 20px;
+    }
+
+    .about-picture-img {
+    width: 504px;
+    height: 545px;
+    }
+}
+
+    /* Desktop 1440 */
+     @media screen and (min-width: 1440px) {
+    .about-section {
+    width: 1440px;
+    }
+
+    .about-text {
+    width: 481px;
+    margin: 78px 0px 79px 0;
+    }
+    
+    .about-picture-img {
+    width: 709px;
+    height: 545px;
+    }
+}
+
