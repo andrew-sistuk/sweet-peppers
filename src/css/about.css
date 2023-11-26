@@ -104,7 +104,7 @@ screen and (min-resolution: 2dppx) {
         padding-bottom: 60px;
         width: 1280px;
         background-image: url(../images/elements-about-bg-desktop1280.png);
-        background-size: 445px 484px;
+        background-size: 545px 484px;
     }
 @media screen and(min-divice-pixel-ratio: 2), screen and (min-resolution:192dpi), screen and (min-resolution: 2dppx) {
     .about-section{
