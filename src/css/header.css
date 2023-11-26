@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+  /* частина навігації при зливці буде з'єднано стилями з модалкою і замінено */
   .header-section {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -7,6 +7,9 @@
   .container {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +31,7 @@
   .header-nav-link {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.28;
+    line-height: 1.29;
     text-transform: uppercase;
     color: #fcf9f9;
     transition: color var(--main-dur-func-transition);
@@ -64,7 +67,8 @@
     height: 44px;
     border-radius: 15px;
     line-height: 0;
-    transition: border-color var(--main-dur-func-transition),
+    transition: 
+      border-color var(--main-dur-func-transition),
       background-color var(--main-dur-func-transition);
     border: 1px solid rgba(252, 249, 249, 0.1);
     background-color: rgba(252, 249, 249, 0.1);
@@ -84,7 +88,7 @@
   }
 
   .header-menu-btn {
-    background-color: inherit;
+    background-color: transparent;
     line-height: 0;
     border: none;
     outline: none;
@@ -93,7 +97,6 @@
   .header-menu-btn-icon {
     stroke: var(--elements-color);
   }
-}
 /* ============END STRETCHING MOBILE========= */
 
 @media screen and (min-width: 375px) {
@@ -142,7 +145,6 @@
   .header-contact-phone-link {
     display: block;
     padding: 14px 28px;
-    font-style: normal;
     color: #fcf9f9;
     font-size: 14px;
     font-weight: 400;
