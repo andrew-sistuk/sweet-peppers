@@ -1,16 +1,20 @@
 /* Footer-mobile */
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 375px;
+}
+
 .footer-section{
     padding-top: 40px;
     padding-bottom: 292px;
     border-top: 1px solid rgba(252, 249, 249, 0.10);
     background-image: url(../images/elements-footer-mobil-bg.png);
-    max-width: 375px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    min-width: 320px;
-    margin: 0 auto;
 }
 
 /* Изображение 2х для Footer-mobile */
@@ -36,23 +40,127 @@ screen and (min-devide-pixel-ratio: 2) {
 }
 
 .footer-link{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.28;
-        text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    text-transform: uppercase;
+    transition: color var(--main-dur-func-transition);
+}
+
+.footer-link:hover, .footer-link:focus{
+    color: var(--elements-color);
 }
 
 .footer-title{
-        font-size: 44px;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -0.03em;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
 }
 
 .main-word-footer{
-    color: var(--white, #ECD979);
-        font-size: 44px;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -0.03em;
+    color: var(--elements-color);
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 768px) {
+.container {
+    padding: 0 32px;
+    max-width: 768px;
+}
+
+/* footer-tablet */
+
+.footer-section {
+    padding-bottom: 40px;
+    background-image: url(../images/elements-footer-tablet-bg.png);
+    background-position: 100% 0;
+}
+
+/* Изображение 2х для Footer-tablet */
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-devide-pixel-ratio: 2) {
+.footer-section {
+    background-image: url(../images/elements-footer-tablet-bg@2x.png)
+}
+}
+
+.footer-list {
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.footer-list-second-container {
+    flex-direction: row;
+}
+
+.footer-title {
+    font-size: 54px;
+    line-height: 1.18;
+    max-width: 521px;
+}
+}
+
+/* DESKTOP STYLES */
+
+/* desktop-1280 */
+
+@media screen and (min-width: 1280px) {
+.container {
+    padding: 0 100px;
+    max-width: 1280px;
+}
+
+/* footer-desktop-1280 */
+
+.footer-section {
+    background-image: url(../images/elements-footer-bg-desktop1280.png);
+}
+
+/* Изображение 2х для Footer-desktop-1280 */
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-devide-pixel-ratio: 2) {
+.footer-section {
+    background-image: url(../images/elements-footer-bg-desktop1280@2x.png)
+}
+}
+
+.footer-list {
+    margin-bottom: 117px;
+}
+
+.footer-title {
+    font-size: 64px;
+    line-height: 1.15;
+    max-width: 754px;
+}
+}
+
+/* desktop-1440 */
+
+@media screen and (min-width: 1440px) {
+.container {
+    max-width: 1440px;
+}
+
+/* footer-desktop-1440 */
+
+.footer-section {
+    background-image: url(../images/elements-footer-bg-desktop1440.png);
+}
+
+/* Изображение 2х для Footer-desktop-1440 */
+
+ @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-devide-pixel-ratio: 2) {
+.footer-section {
+    background-image: url(../images/elements-footer-bg-desktop1440@2x.png)
+}
+}
 }
