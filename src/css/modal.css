@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px ) {
+@media screen and (max-width: 1280px) {
     .menu-backdrop {
         position: fixed;
         width: 100%;
@@ -49,9 +49,9 @@
         text-transform: uppercase;
         color: #1C2225;
     }
-    
+
     .contact-number {
-        width: 160px;
+        max-width: 160px;
         font-size: 12px;
         font-weight: 400;
         line-height: 1.17;
@@ -61,12 +61,38 @@
         border: 1px solid rgba(28, 34, 37, 0.10); 
         color: #1C2225;
     }
+
 }
 
 
-@media screen and (min-width: 767px) and (max-width: 1280px) { 
+@media screen and (min-width: 768px) and (max-width: 1280px) { 
     .menu-backdrop { 
         width: 380px;
         height: 1024px;
+        right: 0;
+        background-image: url("../images/burger-menu-tablet-bg.png");
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+        .menu-backdrop { 
+            background-image: url("../images/burger-menu-tablet-bg@2x.png");
+        }
+    }
+
+    .contact-number {
+        max-width: 195px;
+        padding: 14px 28px;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .nav-link {
+        padding: 225px 0;
+    }
+
+    .list-item {
+        margin-bottom: 25px;
     }
 }
