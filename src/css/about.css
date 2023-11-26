@@ -106,7 +106,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         padding-bottom: 60px;
         width: 1280px;
         background-image: url(../images/elements-about-bg-desktop1280.png);
-        background-size: 545px 484px;
+        background-size: 400px 494px;
     }
 
     .about-container{
