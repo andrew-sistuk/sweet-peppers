@@ -8,6 +8,14 @@ background-repeat: no-repeat;
 margin: 0 auto;
 }
 
+@media screen and(min-divice-pixel-ratio: 2),
+screen and (min-resolution:192dpi),
+screen and (min-resolution: 2dppx) {
+    .about-section {
+        background-image: url(../images/about-mobile-bg.png);
+    }
+}
+
 .about-text{
 display: flex;
 flex-direction: column;
@@ -56,8 +64,16 @@ align-items: flex-start;
 @media screen and (min-width: 768px) {
 .about-section {
     width: 704px;
+    background-image: url(../images/elements-about-tablet-bg.png);
+    background-size: 480px 545px
 }
-
+@media screen and(min-divice-pixel-ratio: 2),
+screen and (min-resolution:192dpi),
+screen and (min-resolution: 2dppx) {
+    .about-section {
+        background-image: url(../images/elements-about-tablet-bg@2x.png);
+    }
+}
 .about-title{
     font-size: 44px;
     line-height: 64px;
@@ -67,13 +83,13 @@ align-items: flex-start;
 .about-paragraf-first{
     font-size: 16px;
     letter-spacing: -0.64px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .about-paragraf-second{
     font-size: 16px;
     letter-spacing: -0.64px;
-
+    margin-bottom: 40px;
 }
 
 .about-picture-img{
@@ -85,9 +101,16 @@ align-items: flex-start;
 @media screen and (min-width: 1280px) {
     .about-section {
         padding: 0 100px;
+        padding-bottom: 60px;
         width: 1280px;
+        background-image: url(../images/elements-about-bg-desktop1280.png);
+        background-size: 445px 484px;
     }
-
+@media screen and(min-divice-pixel-ratio: 2), screen and (min-resolution:192dpi), screen and (min-resolution: 2dppx) {
+    .about-section{
+        background-image: url(../images/elements-about-bg-desktop1280@2x.png);
+    }
+}
     .about-container{
     display: inline-flex;
     justify-content: center;
@@ -109,7 +132,7 @@ align-items: flex-start;
     }
 
     .about-picture-img {
-    width: 504px;
+    width: 594px;
     height: 545px;
     }
 }
@@ -118,8 +141,16 @@ align-items: flex-start;
      @media screen and (min-width: 1440px) {
     .about-section {
     width: 1440px;
+    background-image: url(../images/elements-about-bg-desktop1440.png);
+    background-size: 545px 484px;
     }
-
+    @media screen and(min-divice-pixel-ratio: 2),
+    screen and (min-resolution:192dpi),
+    screen and (min-resolution: 2dppx) {
+        .about-section {
+            background-image: url(../images/elements-about-bg-desktop1440@2x.png);
+        }
+    }
     .about-text {
     width: 481px;
     margin: 78px 0px 79px 0;
