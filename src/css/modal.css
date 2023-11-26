@@ -1,17 +1,27 @@
 @media screen and (max-width: 1280px) {
-    .menu-backdrop {
+    .menu-container {
         position: fixed;
-        width: 100%;
-        height: 100%;
+        width: 274px;
+        height: 812px;
+        right: 0;
+        opacity: 0;
+        z-index: 999;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: transform 250ms linear;
         background-color: var(--elements-color);
         background-image: url("../images/burger-menu-mobil-bg.png");
-        background-position: center bottom;
+        background-position: center 594px;
         background-repeat: no-repeat;
     }
 
-    /* .is-open {
-
-    } */
+    .menu-container.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
     
     @media 
     screen and (min-resolution: 192dpi),
@@ -43,14 +53,16 @@
         height: 36px;
         padding: 0;
         top: 20px;
+        z-index: 9999;
         right: 20px;
-        border: none;
+        border: transparent;
         outline: transparent;
         background-color: transparent;
     }
     .cross-svg {
         stroke: #1C2225;
-        transition: stroke var(--main-dur-func-transition);
+        transition: 
+            stroke var(--main-dur-func-transition);
     }
 
     .cross-svg:hover,
@@ -91,6 +103,7 @@
         height: 1024px;
         right: 0;
         background-image: url("../images/burger-menu-tablet-bg.png");
+        background-position: center 660px;
     }
 
     @media screen and (min-resolution: 192dpi),
