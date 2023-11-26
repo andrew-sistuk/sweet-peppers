@@ -1,67 +1,70 @@
-<section class="section order_section">
-  <div class="container bg_image_container">
-    <h3 class="bg_image_title visually-hidden">Woman photo</h3>
-  </div>
+<section class="order_section">
   <div class="container order_container">
-    <div class="title-order">
-        <h2 class="section_title">
-      <span class="section_title_span">Your order</span> is our priority:
-      Personalized approach and quality of service
-    </h2> 
-    <form class="form_order">
-      <input
-        class="form_input"
-        type="text"
-        name="user_name"
-        pattern="[A-Za-z]{1-30}"
-        required
-        placeholder="Enter your full name"
-      />
-      <input
-        class="form_input"
-        type="email"
-        name="user_email"
-        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-        required
-        placeholder="Enter your email"
-      />
-      <textarea
-        class="form_textarea"
-        rows="10"
-        placeholder="Comments"
-      ></textarea>
-      <button class="order_button" type="submit">
-        send
-        <svg class="order_button_icon" width="26" height="16">
-          <use href="../images/sprite.svg#icon-arrow"></use>
-        </svg>
-      </button>
-    </form>
+    <h3 class="bg_image_title visually-hidden">Woman photo</h3>
+    <div class="title_order">
+      <h2 class="section_title">
+        <span class="section_title_span">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form_order">
+        <input
+          class="form_input"
+          type="text"
+          name="user_name"
+          pattern="[A-Za-z]{1-30}"
+          required
+          placeholder="Enter your full name"
+        />
+        <input
+          class="form_input"
+          type="email"
+          name="user_email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          placeholder="Enter your email"
+        />
+        <textarea
+          class="form_textarea"
+          rows="10"
+          placeholder="Comments"
+        ></textarea>
+        <button class="order_button" type="submit">
+          send
+          <svg class="order_button_icon" width="26" height="16">
+            <use href="../images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
     </div>
-    <div class="picture">
-         <picture class="image_picture_order">
-      <source
-        media="(min-width: 1280px)"
+    <div class="picture_order">
+      <picture class="image_picture_order">
+        <source
+        media="(min-width: 1440px)"
         srcset="
           ../images/order-img-desktop.webp    1x,
           ../images/order-img-desktop@2x.webp 2x
         "
         type="image/webp"
       />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ../images/order-img-tablet.webp    1x,
-          ../images/order-img-tablet@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <img src="../images/order-img-tablet.web" alt="woman in vest" width:="638"
-      height="521" loading="lazy" >
-    </picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../images/order-img-desktop.webp    1x,
+            ../images/order-img-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../images/order-img-tablet.webp    1x,
+            ../images/order-img-tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img src="../images/order-img-tablet.web" alt="woman in vest"
+        width:="638" height="521" loading="lazy" >
+      </picture>
     </div>
-   
   </div>
 </section>
-
-
