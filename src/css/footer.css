@@ -27,13 +27,13 @@ screen and (min-devide-pixel-ratio: 2) {
     }
 }
 
-.footer-list{
+.footer-nav{
     display: flex;
     gap: 40px;
     margin-bottom: 40px;
 }
 
-.footer-list-second-container{
+.footer-list{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -88,12 +88,12 @@ screen and (min-devide-pixel-ratio: 2) {
 }
 }
 
-.footer-list {
+.footer-nav{
     gap: 25px;
     margin-bottom: 80px;
 }
 
-.footer-list-second-container {
+.footer-list {
     flex-direction: row;
 }
 
@@ -130,7 +130,7 @@ screen and (min-devide-pixel-ratio: 2) {
 }
 }
 
-.footer-list {
+.footer-nav {
     margin-bottom: 117px;
 }
 
