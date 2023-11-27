@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 375px) {
     .container {
-        width: 335px;
+        width: 375px;
         margin: 0 auto;
     }
 }
@@ -84,7 +84,7 @@
     }
 
     .container {
-        width: 704px;
+        width: 768px;
         padding-left: 32px;
         padding-right: 32px;
 
@@ -115,7 +115,7 @@
 
 @media screen and (min-width: 1280px) {
     .container {
-        width: 1080px;
+        width: 1280px;
         padding-left: 100px;
         padding-right: 100px;
 
@@ -139,7 +139,7 @@
 /* DESKTOP 1440 */
 @media screen and (min-width: 1440px) {
     .container {
-        width: 1240px;
+        width: 1440px;
     }
 
     .testimonials-list-item {
