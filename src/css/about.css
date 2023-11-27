@@ -1,88 +1,83 @@
-.about-section{
-padding-top: 2px;
-padding-bottom: 60px;
-border-radius: 4px;
-background: url(../images/about-mobile-bg.png);
-background-position: right bottom;
-background-repeat: no-repeat;
-margin: 0 auto;
+@media screen and (min-width: 375px) {
+    .container {
+        width: 335px;
+    }
+
+    @media screen and (min-resolution:192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+            .about-container {
+                background-image: url("../images/about-mobile-bg.png");
+            }
+        }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution:192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px){
-    .about-section {
-        background-image: url(../images/about-mobile-bg.png);
-    }
+.about-container{
+    padding-top: 2px;
+    padding-bottom: 60px;
+    background: url("../images/about-mobile-bg.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .about-text{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about-title {
-    color: #fcf9f9;
     font-size: 32px;
     font-weight: 500;
-    line-height: 44px;
-    letter-spacing: -0.96px;
+    line-height: 1.38;
+    letter-spacing: -0.03em;
     margin-bottom: 40px;
 }
 
 .about-paragraf-first {
-    color: rgba(252, 249, 249, 0.40);
     font-size: 14px;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.56px; 
+    letter-spacing: -0.017em;
     margin-bottom: 20px;
+    color: #FCF9F966;
 }
 
 .about-paragraf-second {
-    color: rgba(252, 249, 249, 0.40);
     font-size: 14px;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.017em;
     margin-bottom: 50px;
+    color: #FCF9F966;
 }
 
 .about-picture-img {
-    justify-content: center;
-    align-items: center;
+    border-radius: 4px;
 }
 
-@media screen and (min-width: 375px) {
-    .about-section {
-        width: 335px;
-    }
-}
-
-/* Tablet  */
+    /* Tablet 768px  */
 @media screen and (min-width: 768px) {
-.about-section {
+.about-container {
     width: 704px;
-    background-image: url(../images/elements-about-tablet-bg.png);
+    background-image: url("../images/elements-about-tablet-bg.png");
     background-size: 480px 545px
 }
 
 .about-title{
     font-size: 44px;
-    line-height: 64px;
-    letter-spacing: -1.32px;
+    line-height: 1.47;
+    letter-spacing: -0.04em;
 }
 
 .about-paragraf-first{
     font-size: 16px;
-    letter-spacing: -0.64px;
+    letter-spacing: -0.02em;
     margin-bottom: 20px;
 }
 
 .about-paragraf-second{
     font-size: 16px;
-    letter-spacing: -0.64px;
+    letter-spacing: -0.02em;
     margin-bottom: 40px;
 }
 
@@ -90,82 +85,88 @@ align-items: flex-start;
     width: 704px;
     height: 545px;
 }
-}
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution:192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .about-section {
-        background-image: url(../images/elements-about-tablet-bg@2x.png);
+    @media screen and (min-resolution:192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .about-container {
+            background-image: url("../images/elements-about-tablet-bg@2x.png");
+        }
     }
 }
 
+
+    /* DESKTOP 1280PX */
 @media screen and (min-width: 1280px) {
-    .about-section {
-        padding: 0 100px;
-        padding-bottom: 60px;
-        width: 1280px;
-        background-image: url(../images/elements-about-bg-desktop1280.png);
-        background-size: 400px 494px;
-    }
+.about-container {
+    padding: 15px 100px 60px 100px;
+    width: 1280px;
+    background-image: url("../images/elements-about-bg-desktop1280.png");
+    background-size: 400px 494px;
+}
 
-    .about-container{
-    display: inline-flex;
+.about-container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    }
+}
 
-    .about-text {
+.about-text {
     width: 436px;
-    margin: 45.5px 0px 45.5px 0;
-    }
+    padding: 46px 0;
+    margin-right: 50px;
+}
 
-    .about-title {
+.about-title {
     margin-bottom: 40px;
-    }
+}
 
-    .about-paragraf-first {
+.about-paragraf-first {
     margin-bottom: 20px;
-    }
+}
 
-    .about-picture-img {
+.about-picture-img {
     width: 594px;
     height: 545px;
+}
+    @media 
+    screen and (min-resolution:192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .about-container {
+            background-image: url("../images/elements-about-bg-desktop1280@2x.png");
+        }
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-screen and (min-resolution:192dpi) and (min-width: 1280px),
-screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-    .about-section {
-        background-image: url(../images/elements-about-bg-desktop1280@2x.png);
-    }
-}
+
 
     /* Desktop 1440 */
-     @media screen and (min-width: 1440px) {
-    .about-section {
+@media screen and (min-width: 1440px) {
+
+.about-container {
     width: 1440px;
-    background-image: url(../images/elements-about-bg-desktop1440.png);
+    background-image: url("../images/elements-about-bg-desktop1440.png");
     background-size: 545px 484px;
-    }
+}
   
-    .about-text {
+.about-text {
     width: 481px;
-    margin: 78px 0px 79px 0;
-    }
+    padding: 78px 0px;
+}
     
-    .about-picture-img {
+.about-picture-img {
     width: 709px;
     height: 545px;
-    }
+}
+
+    @media screen and (min-resolution:192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+           .about-container {
+               background-image: url("../images/elements-about-bg-desktop1440@2x.png");
+           }
+     }
 } 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
-  screen and (min-resolution:192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppx) and (min-width: 1440px) {
-      .about-section {
-          background-image: url(../images/elements-about-bg-desktop1440@2x.png);
-      }
-  }
+  
 
