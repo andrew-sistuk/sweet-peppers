@@ -140,8 +140,8 @@
     padding-top: 926px;
     background-image: url(../images/order-background-tablet.webp);
     background-position: top 50px center;
-  background-size: 768px 776px;
-  background-repeat: no-repeat;
+    background-size: 768px 776px;
+    background-repeat: no-repeat;
   }
 
   .order_container {
@@ -166,7 +166,7 @@
 
 @media screen and (min-width: 1280px) {
   .order_section {
-  padding-top: 1001px;
+    padding-top: 1001px;
     background-image: url(../images/order-background-desktop-1280.webp);
     background-position: top 50px center;
     background-repeat: no-repeat;
@@ -224,6 +224,12 @@
 
 /* Tablet styles */
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .form_order {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
@@ -243,9 +249,8 @@
 
   .form_order {
     width: 508px;
-    margin-bottom: 100px;
   }
-  
+
   .form_input {
     max-width: 508px;
     height: 50px;
@@ -273,7 +278,6 @@
     margin-left: 66px;
   }
 }
-
 /* /Tablet styles */
 
 /* Desctop styles 1280 */
@@ -281,19 +285,17 @@
   .container {
     padding: 0 64px;
     max-width: 1280px;
-    max-height: 640px;
   }
 
-.order_section {
-  margin-bottom: 75px;
-}
+  .order_section {
+    margin-bottom: 75px;
+  }
 
   .order_container {
     flex-direction: row-reverse;
     justify-content: center;
     gap: 50px;
   }
-
 
   .picture_order {
     margin-left: 28px;
