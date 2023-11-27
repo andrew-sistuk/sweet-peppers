@@ -1,203 +1,188 @@
-
 /* ============= MOBILE style collection ===============*/
 
 .container {
-    width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-collection-container {
-    padding-top: 18px;
-    padding-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url("../images/elements-collection-mobil-bg.png");
-    background-repeat: no-repeat;
-    background-position: left 316px;
-    background-size: 72px 139px;
+  padding-top: 18px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../images/elements-collection-mobil-bg.png');
+  background-repeat: no-repeat;
+  background-position: left 316px;
+  background-size: 72px 177px;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-    .page-collection-container {
-        background-image: url("../images/elements-collection-mobil-bg@2x.png");
-    }
+@media screen and (min-resolution: 192dpi),
+  screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 2dppx) {
+  .page-collection-container {
+    background-image: url('../images/elements-collection-mobil-bg@2x.png');
+  }
 }
 
 .collection-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.38;
-    letter-spacing: -0.03em;
-        }
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+}
 
 .collection-menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .collection-item {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .collection-shirt-name {
-    margin-top: 18px;
-    margin-bottom: 8px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .price {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    color: rgba(252, 249, 249, 0.40);
-}
-    
-.price-span {
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgba(252, 249, 249, 0.4);
 }
 
+.price-span {
+  text-transform: uppercase;
+}
 
 /*=============== TABLET style collection =================*/
 
-
 @media screen and (min-width: 768px) {
-
-.container {
+  .container {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-}
+  }
 
-.page-collection-container {
-    background: url("../images/elements-collection-tablet-bg.png");
+  .page-collection-container {
+    background: url('../images/elements-collection-tablet-bg.png');
     background-repeat: no-repeat;
     background-position: left 271px;
     background-size: 114px 300px;
-}
+  }
 
-@media screen and (min-resolution:192dpi),
-screen and(min-resolution: 2dppx),
-screen and(min-device-pixel-ratio:2) {
+  @media screen and (min-resolution: 192dpi),
+    screen and(min-resolution: 2dppx),
+    screen and(min-device-pixel-ratio:2) {
     .page-collection-container {
-        background-image: url("../images/elements-collection-tablet-bg@2x.png");
+      background-image: url('../images/elements-collection-tablet-bg@2x.png');
     }
-}
+  }
 
-
-.collection-title {
+  .collection-title {
     text-align: center;
     font-size: 44px;
     font-weight: 500;
     line-height: 1.45;
     letter-spacing: -0.03em;
-}
+  }
 
-.collection-menu {
+  .collection-menu {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
     row-gap: 20px;
-}
+  }
 
-.collection-item {
+  .collection-item {
     width: calc((100% - 40px) / 2);
-}
+  }
 
-.collection-shirt-name {
+  .collection-shirt-name {
     font-size: 18px;
-}
+  }
 
-.price {
+  .price {
     font-style: 18px;
+  }
 }
-
-}
-
 
 /*=============== DEKSTOP 1280 style collection ==============*/
 
-
 @media screen and (min-width: 1280px) {
-
-.container {
+  .container {
     width: 1280px;
     padding-left: 100px;
-    padding-right: 98px;
-}
+    padding-right: 100px;
+  }
 
-.page-collection-container {
-    background: url("../images/elements-collection-bg-desktop1280.png");
+  .page-collection-container {
+    background: url('../images/elements-collection-bg-desktop1280.png');
     background-repeat: no-repeat;
     background-position: left 291px;
     background-size: 169px 300px;
-}
+  }
 
-@media screen and (min-resolution:192dpi),
+  @media screen and (min-resolution: 192dpi),
     screen and(min-resolution: 2dppx),
     screen and(min-device-pixel-ratio:2) {
     .page-collection-container {
-        background-image: url("../images/elements-collection-bg-desktop1280@2x.png");
+      background-image: url('../images/elements-collection-bg-desktop1280@2x.png');
     }
+  }
+
+  .collection-menu {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    row-gap: 20px;
+  }
+
+  .collection-item {
+    width: calc((100% - 40px) / 3);
+  }
 }
-
-    .collection-menu {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        row-gap: 20px;
-    }
-
-    .collection-item {
-        width: calc((100% - 40px) / 3);
-    }
-
-}
-
 
 /*================ DEKSTOP 1440 style collection =============*/
 
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
-    @media screen and (min-width: 1440px) {
+  .page-collection-container {
+    background: url('../images/elements-collection-bg-desktop1440.png');
+    background-repeat: no-repeat;
+    background-position: left 301px;
+    background-size: 169px 300px;
+  }
 
-    .container {
-        width: 1440px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
     .page-collection-container {
-        background: url("../images/elements-collection-bg-desktop1440.png");
-        background-repeat: no-repeat;
-        background-position: left 301px;
-        background-size: 169px 300px;
+      background-image: url('../images/elements-collection-bg-desktop1440@2x.png');
     }
-
-    @media screen and (min-resolution:192dpi),
-        screen and (min-resolution: 2dppx),
-        screen and (min-device-pixel-ratio: 2) {
-        .page-collection-container {
-            background-image: url("../images/elements-collection-bg-desktop1440@2x.png");
-        }
-    }
-
+  }
 }
-
