@@ -3,7 +3,7 @@
   padding-top: 40px;
   padding-bottom: 292px;
   border-top: 1px solid rgba(252, 249, 249, 0.1);
-  background-image: url(../images/elements-footer-mobil-bg.png);
+  background-image: url('../images/elements-footer-mobil-bg.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -15,7 +15,7 @@
   screen and (min-resolution: 2dppx),
   screen and (min-devide-pixel-ratio: 2) {
   .footer-section {
-    background-image: url(../images/elements-footer-mobil-bg@2x.png);
+    background-image: url('../images/elements-footer-mobil-bg@2x.png');
   }
 }
 
@@ -61,7 +61,7 @@
   /* footer-tablet */
   .footer-section {
     padding-bottom: 40px;
-    background-image: url(../images/elements-footer-tablet-bg.png);
+    background-image: url('../images/elements-footer-tablet-bg.png');
     background-position: 100% 0;
   }
 
@@ -71,7 +71,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-devide-pixel-ratio: 2) {
     .footer-section {
-      background-image: url(../images/elements-footer-tablet-bg@2x.png);
+      background-image: url('../images/elements-footer-tablet-bg@2x.png');
     }
   }
 
@@ -96,7 +96,7 @@
 /* desktop-1280 */
 @media screen and (min-width: 1280px) {
   .footer-section {
-    background-image: url(../images/elements-footer-bg-desktop1280.png);
+    background-image: url('../images/elements-footer-bg-desktop1280.png');
   }
 
   /* Изображение 2х для Footer-desktop-1280 */
@@ -105,7 +105,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-devide-pixel-ratio: 2) {
     .footer-section {
-      background-image: url(../images/elements-footer-bg-desktop1280@2x.png);
+      background-image: url('../images/elements-footer-bg-desktop1280@2x.png');
     }
   }
 
@@ -124,10 +124,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer-section {
-    background-image: url(../images/elements-footer-bg-desktop1440.png);
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url('../images/elements-footer-bg-desktop1440.png');
   }
 
   /* Изображение 2х для Footer-desktop-1440 */
@@ -136,7 +133,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-devide-pixel-ratio: 2) {
     .footer-section {
-      background-image: url(../images/elements-footer-bg-desktop1440@2x.png);
+      background-image: url('../images/elements-footer-bg-desktop1440@2x.png');
     }
   }
 }
