@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/sweet-peppers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/sweet-peppers/assets/index-bf1cea76.css">
+    <link rel="stylesheet" href="/sweet-peppers/assets/index-47bd1886.css">
   </head>
 
   <body>
@@ -94,7 +94,7 @@
             target="_blank"
           >
             <svg class="header-soc-icon" height="28" width="28">
-              <use href="/sweet-peppers/assets/sprite-e1887937.svg#icon-facebook"></use>
+              <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -105,7 +105,7 @@
             target="_blank"
           >
             <svg class="header-soc-icon" height="28" width="28">
-              <use href="/sweet-peppers/assets/sprite-e1887937.svg#icon-instagram"></use>
+              <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -116,7 +116,7 @@
             target="_blank"
           >
             <svg class="header-soc-icon" height="28" width="28">
-              <use href="/sweet-peppers/assets/sprite-e1887937.svg#icon-youtube"></use>
+              <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -128,7 +128,7 @@
           height="24"
           aria-label="menu button icon"
         >
-          <use href="/sweet-peppers/assets/sprite-e1887937.svg#icon-menu"></use>
+          <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
@@ -147,13 +147,13 @@
       <a href="#order" class="hero-btn"
         >Order
         <svg class="hero-icon-btn" width="51" height="22">
-          <use href="/sweet-peppers/assets/sprite-e1887937.svg#icon-arrow"></use>
+          <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-arrow"></use>
         </svg>
       </a>
     </div>
     <div class="hero-handmade">
       <svg class="hero-handmade-svg" width="52" height="51">
-        <use href="/sweet-peppers/assets/sprite-e1887937.svg#icon-star"></use>
+        <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-star"></use>
       </svg>
       <p class="hero-handmade-text">all embroidery is made by hand</p>
     </div>
@@ -452,7 +452,132 @@
   </div>
 </section>
 
-      
+      <section class="order-section">
+  <div class="order-container container">
+    <div class="order-wrapper">
+      <h2 class="order-title">
+        <span class="order-title-span">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          pattern="[A-Za-z]{1-30}"
+          required
+          placeholder="Enter your full name"
+        />
+        <input
+          class="form-input"
+          type="email"
+          name="user-email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          placeholder="Enter your email"
+        />
+        <textarea class="form-textarea" placeholder="Comments"></textarea>
+        <button class="order_button" type="submit">
+          send
+          <svg class="order_button_icon" width="26" height="16">
+            <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <picture class="image-picture-order">
+      <source
+        media="(min-width: 1440px)"
+        width="524"
+        height="521"
+        srcset="/sweet-peppers/assets/order-img-desktop-3b6149e1.webp 1x, /sweet-peppers/assets/order-img-desktop@2x-3930fadc.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        width="524"
+        height="521"
+        srcset="/sweet-peppers/assets/order-img-desktop-3b6149e1.webp 1x, /sweet-peppers/assets/order-img-desktop@2x-3930fadc.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/sweet-peppers/assets/order-img-tablet-d63de538.webp 1x, /sweet-peppers/assets/order-img-tablet@2x-bd84f2f5.webp 2x"
+        type="image/webp"
+      />
+      <img src="./images/order-img-tablet.web" alt="woman in vest" width:="638"
+      height="521" loading="lazy" >
+    </picture>
+  </div>
+</section>
+
+<!-- <section class="order-section">
+  <div class="container order-container">
+    <h3 class="bg-image-title visually-hidden">Woman photo</h3>
+    <div class="title-order">
+      <h2 class="section-title">
+        <span class="section-title-span">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          pattern="[A-Za-zа-яА-ЯїЇєЄґҐйЙіІ']+"
+          required
+          placeholder="Enter your full name"
+        />
+        <input
+          class="form-input"
+          type="email"
+          name="user-email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          placeholder="Enter your email"
+        />
+        <textarea class="form-textarea" placeholder="Comments"></textarea>
+        <button class="order_button" type="submit">
+          send
+          <svg class="order_button_icon" width="26" height="16">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="picture-order">
+      <picture class="image-picture-order">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./images/order-img-desktop.webp    1x,
+            ./images/order-img-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/order-img-desktop.webp    1x,
+            ./images/order-img-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/order-img-tablet.webp    1x,
+            ./images/order-img-tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img src="./images/order-img-tablet.webp" alt="woman in vest"
+        width:="638" height="521" loading="lazy" >
+      </picture>
+    </div>
+  </div>
+</section> -->
+
       <section class="testimonials-section" id="testimonials">
   <div class="testimonials-wrapper container">
     <h2 class="testimonials-title">Testimonials</h2>
