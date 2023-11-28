@@ -4,11 +4,6 @@
   padding-bottom: 24px;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -98,23 +93,11 @@
 }
 /* ============END STRETCHING MOBILE========= */
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-  }
-}
-
 /* ===========END MOBILE STYLES============ */
 
 /* ============TABLET STYLES============== */
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .header-contacts {
     gap: 20px;
   }
@@ -125,12 +108,6 @@
 /* ============DESKTOP 1280 STYLES============= */
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .header-logo-link {
     margin-right: 60px;
   }
@@ -170,12 +147,3 @@
   }
 }
 /* ============END DESKTOP 1280 STYLES============= */
-
-/* =============DESKTOP 1440 STYLES=============== */
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-  }
-}
-/* ==========END DESKTOP 1440 STYLES=============== */
