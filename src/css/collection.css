@@ -69,6 +69,7 @@
 @media screen and (min-width: 768px) {
   .page-collection-container {
     background: url('../images/elements-collection-tablet-bg.png');
+    background-repeat: no-repeat;
     background-position: left 271px;
     background-size: 95px 250px;
   }
@@ -115,6 +116,7 @@
 @media screen and (min-width: 1280px) {
   .page-collection-container {
     background: url('../images/elements-collection-bg-desktop1280.png');
+    background-repeat: no-repeat;
     background-position: left 291px;
     background-size: 140px 250px;
   }
@@ -151,7 +153,9 @@
 
   .page-collection-container {
     background: url('../images/elements-collection-bg-desktop1440.png');
+    background-repeat: no-repeat;
     background-position: left 301px;
+    background-size: 140px 250px;
   }
 
   @media screen and (min-resolution: 192dpi),
