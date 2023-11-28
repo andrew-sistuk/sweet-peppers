@@ -1,0 +1,132 @@
+@media screen and (max-width: 1279px) {
+  .menu-container {
+    position: fixed;
+    width: 274px;
+    height: 812px;
+    right: 0;
+    opacity: 0;
+    z-index: 999;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+    background-color: var(--elements-color);
+    background-image: url('../images/burger-menu-mobil-bg.png');
+    background-position: center 594px;
+    background-repeat: no-repeat;
+  }
+
+  .menu-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+    .menu-backdrop {
+      background-image: url('../images/burger-menu-mobil-bg@2x.png');
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .nav-link {
+    align-self: flex-end;
+    padding: 185px 0;
+  }
+
+  .cross-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 0;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    top: 20px;
+    z-index: 9999;
+    right: 20px;
+    border: transparent;
+    outline: transparent;
+    background-color: transparent;
+  }
+  .cross-svg {
+    stroke: #1c2225;
+    transition: stroke var(--main-dur-func-transition);
+  }
+
+  .cross-svg:hover,
+  .cross-svg:focus {
+    stroke: #fcf9f9;
+  }
+
+  .list-item {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .link-nav {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    text-transform: uppercase;
+    color: #1c2225;
+  }
+
+  .header-nav-list-item {
+    font-style: normal;
+  }
+
+  .contact-number {
+    max-width: 160px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: 1px solid rgba(28, 34, 37, 0.1);
+    color: #1c2225;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .menu-backdrop {
+    width: 380px;
+    height: 1024px;
+    right: 0;
+    background-image: url('../images/burger-menu-tablet-bg.png');
+    background-position: center 660px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+    .menu-backdrop {
+      background-image: url('../images/burger-menu-tablet-bg@2x.png');
+    }
+  }
+
+  .contact-number {
+    max-width: 195px;
+    padding: 14px 28px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .nav-link {
+    padding: 225px 0;
+  }
+
+  .list-item {
+    margin-bottom: 25px;
+  }
+}
