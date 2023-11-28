@@ -1,0 +1,134 @@
+<section class="order-section">
+  <div class="order-container container">
+    <div class="order-wrapper">
+      <h2 class="order-title">
+        <span class="order-title-span">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          pattern="[A-Za-z]{1-30}"
+          required
+          placeholder="Enter your full name"
+        />
+        <input
+          class="form-input"
+          type="email"
+          name="user-email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          placeholder="Enter your email"
+        />
+        <textarea class="form-textarea" placeholder="Comments"></textarea>
+        <button class="order_button" type="submit">
+          send
+          <svg class="order_button_icon" width="26" height="16">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <picture class="image-picture-order">
+      <source
+        media="(min-width: 1440px)"
+        width="524"
+        height="521"
+        srcset="
+          ./images/order-img-desktop.webp    1x,
+          ./images/order-img-desktop@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        width="524"
+        height="521"
+        srcset="
+          ./images/order-img-desktop.webp    1x,
+          ./images/order-img-desktop@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/order-img-tablet.webp    1x,
+          ./images/order-img-tablet@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <img src="./images/order-img-tablet.web" alt="woman in vest" width:="638"
+      height="521" loading="lazy" >
+    </picture>
+  </div>
+</section>
+
+<!-- <section class="order-section">
+  <div class="container order-container">
+    <h3 class="bg-image-title visually-hidden">Woman photo</h3>
+    <div class="title-order">
+      <h2 class="section-title">
+        <span class="section-title-span">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          pattern="[A-Za-zа-яА-ЯїЇєЄґҐйЙіІ']+"
+          required
+          placeholder="Enter your full name"
+        />
+        <input
+          class="form-input"
+          type="email"
+          name="user-email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          placeholder="Enter your email"
+        />
+        <textarea class="form-textarea" placeholder="Comments"></textarea>
+        <button class="order_button" type="submit">
+          send
+          <svg class="order_button_icon" width="26" height="16">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="picture-order">
+      <picture class="image-picture-order">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./images/order-img-desktop.webp    1x,
+            ./images/order-img-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/order-img-desktop.webp    1x,
+            ./images/order-img-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/order-img-tablet.webp    1x,
+            ./images/order-img-tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img src="./images/order-img-tablet.webp" alt="woman in vest"
+        width:="638" height="521" loading="lazy" >
+      </picture>
+    </div>
+  </div>
+</section> -->
