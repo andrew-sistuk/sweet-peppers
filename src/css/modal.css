@@ -1,3 +1,10 @@
+.menu-container {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 1279px) {
   .menu-container {
     position: fixed;
