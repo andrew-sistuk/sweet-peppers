@@ -1,20 +1,12 @@
 /* ============= MOBILE style collection ===============*/
-
-.container {
-  width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .page-collection-container {
   padding-top: 18px;
   padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
   background: url('../images/elements-collection-mobil-bg.png');
   background-repeat: no-repeat;
   background-position: left 316px;
-  background-size: 72px 177px;
+  /* тут довелось пропорційно змінити розміри тому що витягнуте зображення більше */
+  background-size: 60px 147px;
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -75,17 +67,10 @@
 /*=============== TABLET style collection =================*/
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .page-collection-container {
     background: url('../images/elements-collection-tablet-bg.png');
-    background-repeat: no-repeat;
     background-position: left 271px;
-    background-size: 114px 300px;
+    background-size: 95px 250px;
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -128,17 +113,10 @@
 /*=============== DEKSTOP 1280 style collection ==============*/
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .page-collection-container {
     background: url('../images/elements-collection-bg-desktop1280.png');
-    background-repeat: no-repeat;
     background-position: left 291px;
-    background-size: 169px 300px;
+    background-size: 140px 250px;
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -173,9 +151,7 @@
 
   .page-collection-container {
     background: url('../images/elements-collection-bg-desktop1440.png');
-    background-repeat: no-repeat;
     background-position: left 301px;
-    background-size: 169px 300px;
   }
 
   @media screen and (min-resolution: 192dpi),
