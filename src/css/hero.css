@@ -125,6 +125,7 @@
     border-radius: 50%/90% 90% 0 0;
     position: absolute;
     bottom: 0;
+    right: 100px;
     right: 32px;
   }
 }
@@ -154,11 +155,11 @@
 
   .hero-handmade {
     top: 0;
-    right: 15px;
+    right: 100px;
   }
 
   .hero-img-ukraine {
-    right: 15px;
+    right: 100px;
   }
 
   .hero-img {
