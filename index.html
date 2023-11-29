@@ -20,13 +20,13 @@
     />
     
     <script type="module" crossorigin src="/sweet-peppers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/sweet-peppers/assets/index-47bd1886.css">
+    <link rel="stylesheet" href="/sweet-peppers/assets/index-495ec6d0.css">
   </head>
 
   <body>
-    <div class="menu-container">
+    <div class="menu-container is-open" data-menu>
   <div class="menu">
-    <button class="cross-button" type="button">
+    <button class="cross-button" type="button" data-menu-close>
       <svg class="cross-svg" width="36" height="36">
         <use href="../images/sprite.svg#icon-cross"></use>
       </svg>
@@ -34,16 +34,16 @@
     <nav class="nav-link">
       <ul class="list-link">
         <li class="list-item">
-          <a href="" class="link-nav">About us</a>
+          <a href="#about" class="link-nav">About us</a>
         </li>
         <li class="list-item">
-          <a href="" class="link-nav">Our collection</a>
+          <a href="#collection" class="link-nav">Our collection</a>
         </li>
         <li class="list-item">
-          <a href="" class="link-nav">Customer Order</a>
+          <a href="#order" class="link-nav">Customer Order</a>
         </li>
         <li class="list-item">
-          <a href="" class="link-nav">Testimonials</a>
+          <a href="#testimonials" class="link-nav">Testimonials</a>
         </li>
       </ul>
     </nav>
@@ -59,7 +59,7 @@
       <a class="header-logo-link" href="./index.html">
         <img
           class="header-logo"
-          src="/sweet-peppers/assets/favicon-785d6487.svg"
+          src="../public/favicon.svg"
           alt="logo image"
           width="44"
           height="39"
@@ -67,13 +67,13 @@
       </a>
       <ul class="header-nav-list">
         <li class="header-nav-list-item">
-          <a class="header-nav-link" href="#about-us">about us</a>
+          <a class="header-nav-link" href="#about">about us</a>
         </li>
         <li class="header-nav-list-item">
-          <a class="header-nav-link" href="#our-collection">our collection </a>
+          <a class="header-nav-link" href="#collection">our collection </a>
         </li>
         <li class="header-nav-list-item">
-          <a class="header-nav-link" href="#customer-order">customer order</a>
+          <a class="header-nav-link" href="#order">customer order</a>
         </li>
         <li class="header-nav-list-item">
           <a class="header-nav-link" href="#testimonials">testimonials</a>
@@ -94,7 +94,7 @@
             target="_blank"
           >
             <svg class="header-soc-icon" height="28" width="28">
-              <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-facebook"></use>
+              <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -105,7 +105,7 @@
             target="_blank"
           >
             <svg class="header-soc-icon" height="28" width="28">
-              <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-instagram"></use>
+              <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -116,19 +116,19 @@
             target="_blank"
           >
             <svg class="header-soc-icon" height="28" width="28">
-              <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-youtube"></use>
+              <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <button class="header-menu-btn" type="button">
+      <button class="header-menu-btn" type="button" data-menu-open>
         <svg
           class="header-menu-btn-icon"
           width="36"
           height="24"
           aria-label="menu button icon"
         >
-          <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-menu"></use>
+          <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
@@ -147,13 +147,13 @@
       <a href="#order" class="hero-btn"
         >Order
         <svg class="hero-icon-btn" width="51" height="22">
-          <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-arrow"></use>
+          <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-arrow"></use>
         </svg>
       </a>
     </div>
     <div class="hero-handmade">
       <svg class="hero-handmade-svg" width="52" height="51">
-        <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-star"></use>
+        <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-star"></use>
       </svg>
       <p class="hero-handmade-text">all embroidery is made by hand</p>
     </div>
@@ -480,7 +480,7 @@
         <button class="order_button" type="submit">
           send
           <svg class="order_button_icon" width="26" height="16">
-            <use href="/sweet-peppers/assets/sprite-7ea81a7b.svg#icon-arrow"></use>
+            <use href="/sweet-peppers/assets/sprite-35164d90.svg#icon-arrow"></use>
           </svg>
         </button>
       </form>
@@ -678,6 +678,5 @@
 </footer>
 
     
-    <script type="text/javascript" src="./js/scroll.js"></script>
   </body>
 </html>
