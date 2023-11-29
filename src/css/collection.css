@@ -1,7 +1,11 @@
 /* ============= MOBILE style collection ===============*/
-.page-collection-container {
-  padding-top: 18px;
+.page-collection {
+  padding-top: 9px;
   padding-bottom: 40px;
+}
+
+.page-collection-container {
+
   background: url('../images/elements-collection-mobil-bg.png');
   background-repeat: no-repeat;
   background-position: left 316px;
@@ -10,8 +14,8 @@
 }
 
 @media screen and (min-resolution: 192dpi),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 2dppx) {
+screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 2dppx) {
   .page-collection-container {
     background-image: url('../images/elements-collection-mobil-bg@2x.png');
   }
@@ -67,6 +71,11 @@
 /*=============== TABLET style collection =================*/
 
 @media screen and (min-width: 768px) {
+  .page-collection {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
   .page-collection-container {
     background: url('../images/elements-collection-tablet-bg.png');
     background-repeat: no-repeat;
@@ -75,8 +84,8 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and(min-resolution: 2dppx),
-    screen and(min-device-pixel-ratio:2) {
+  screen and(min-resolution: 2dppx),
+  screen and(min-device-pixel-ratio:2) {
     .page-collection-container {
       background-image: url('../images/elements-collection-tablet-bg@2x.png');
     }
@@ -114,6 +123,11 @@
 /*=============== DEKSTOP 1280 style collection ==============*/
 
 @media screen and (min-width: 1280px) {
+  .page-collection {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
   .page-collection-container {
     background: url('../images/elements-collection-bg-desktop1280.png');
     background-repeat: no-repeat;
@@ -122,8 +136,8 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and(min-resolution: 2dppx),
-    screen and(min-device-pixel-ratio:2) {
+  screen and(min-resolution: 2dppx),
+  screen and(min-device-pixel-ratio:2) {
     .page-collection-container {
       background-image: url('../images/elements-collection-bg-desktop1280@2x.png');
     }
@@ -159,8 +173,8 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
     .page-collection-container {
       background-image: url('../images/elements-collection-bg-desktop1440@2x.png');
     }

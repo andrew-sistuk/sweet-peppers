@@ -1,5 +1,5 @@
-.testimonials-wrapper {
-  padding-top: 80px;
+.testimonials-section {
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 
@@ -46,6 +46,7 @@
 
 /* MOBILE HIDDEN REVIEW  */
 @media screen and (max-width: 767.9px) {
+
   .testimonials-list-item-1-hidden,
   .testimonials-list-item-2-hidden {
     position: absolute;
@@ -63,6 +64,11 @@
       position: absolute;
       transform: translate(-9999px, 0);
     }
+  }
+
+  .testimonials-section {
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .testimonials-list-item {
@@ -85,6 +91,11 @@
 /* DESKTOP 1280 */
 
 @media screen and (min-width: 1280px) {
+  .testimonials-section {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
+
   .testimonials-item-text {
     font-size: 16px;
   }
