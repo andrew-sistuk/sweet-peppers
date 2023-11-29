@@ -111,7 +111,6 @@ screen and (min-device-pixel-ratio: 2) {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
     padding-bottom: 80px;
     background-image: url('../images/elements-about-bg-desktop1280.png');
     background-size: 400px 494px;
