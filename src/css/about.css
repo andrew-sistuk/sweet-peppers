@@ -1,6 +1,9 @@
+.about-section {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
 .about-container {
-  padding-top: 2px;
-  padding-bottom: 60px;
   background: url('../images/about-mobile-bg.png');
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -8,8 +11,8 @@
 }
 
 @media screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
   .about-container {
     background-image: url('../images/about-mobile-bg.png');
   }
@@ -51,9 +54,15 @@
 
 /* Tablet 768px  */
 @media screen and (min-width: 768px) {
+  .about-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .about-container {
     background-image: url('../images/elements-about-tablet-bg.png');
     background-size: 480px 545px;
+    padding-bottom: 50px;
   }
 
   .about-title {
@@ -64,13 +73,15 @@
 
   .about-paragraf-first {
     font-size: 16px;
-    letter-spacing: -0.02em;
+    line-height: normal;
+    letter-spacing: -0.04em;
     margin-bottom: 20px;
   }
 
   .about-paragraf-second {
     font-size: 16px;
-    letter-spacing: -0.02em;
+    line-height: normal;
+    letter-spacing: -0.04em;
     margin-bottom: 40px;
   }
 
@@ -80,8 +91,8 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
     .about-container {
       background-image: url('../images/elements-about-tablet-bg@2x.png');
     }
@@ -90,12 +101,17 @@
 
 /* DESKTOP 1280PX */
 @media screen and (min-width: 1280px) {
+  .about-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+  }
+
   .about-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     background-image: url('../images/elements-about-bg-desktop1280.png');
     background-size: 400px 494px;
   }
@@ -114,13 +130,18 @@
     margin-bottom: 20px;
   }
 
+  .about-paragraf-second {
+    margin-bottom: 0;
+  }
+
   .about-picture-img {
     width: 594px;
     height: 545px;
   }
+
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
     .about-container {
       background-image: url('../images/elements-about-bg-desktop1280@2x.png');
     }
@@ -145,8 +166,8 @@
   }
 
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
     .about-container {
       background-image: url('../images/elements-about-bg-desktop1440@2x.png');
     }
