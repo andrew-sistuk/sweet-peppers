@@ -1,8 +1,8 @@
 .menu-container {
   position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media screen and (max-width: 1279px) {
@@ -11,11 +11,11 @@
     width: 274px;
     height: 812px;
     right: 0;
-    opacity: 0;
+    opacity: 1;
     z-index: 999;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateX(100%);
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
     transition: transform 250ms linear;
     background-color: var(--elements-color);
     background-image: url('../images/burger-menu-mobil-bg.png');
@@ -23,11 +23,11 @@
     background-repeat: no-repeat;
   }
 
-  .menu-container.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(0);
+  .is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -135,5 +135,13 @@
 
   .list-item {
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-container {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
