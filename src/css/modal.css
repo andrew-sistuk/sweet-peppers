@@ -93,6 +93,7 @@
   }
 
   .contact-number {
+    display: block;
     max-width: 160px;
     font-size: 12px;
     font-weight: 400;
