@@ -1,102 +1,9 @@
 
-*,*:before,*:after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box
-}
 
-h1,p {
-    margin: 0;
-    font-weight: inherit;
-    font-size: inherit
-}
-
-a {
-    color: currentColor;
-    text-decoration: none;
-    cursor: pointer
-}
-
-button {
-    font: inherit
-}
-
-.list {
-    list-style: none
-}
-
-.link {
-    text-decoration: none
-}
-
-button {
-    cursor: pointer
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto
-
-  }
-  
-  html,body {
-    font-family: Manrope,sans-serif;
-    font-size: 16px;
-    background-color: #1c2225;
-    color: #fcf9f9;
-    scroll-behavior: smooth
-}
-
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto
-}
-
-  
-
-/* ===HERO=== */
-    
 @media screen and (min-width: 768px) {
-    .container {
-        max-width:768px;
-        padding-left: 32px;
-        padding-right: 32px
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width:1280px;
-        padding-left: 20px;
-        padding-right: 20px
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .container {
-        max-width:1440px;
-        padding-left: 18px;
-        padding-right: 18px
-    }
+    .hero {
+    padding-top: 60px;
+    padding-bottom: 80px
 }
 
 .hero-container {
@@ -105,18 +12,16 @@ img {
 }
 
 .hero-title {
-    color: var(--white, #FCF9F9);
     font-size: 44px;
     line-height: 1.23;
-    letter-spacing: -.03em;
+    letter-spacing: -0.03em;
     max-width: 335px;
     margin-bottom: 40px
 }
 
 .hero-span-ukrainian {
-    color: var(--white, #ECD979);
     line-height: 54px;
-    letter-spacing: -.03em
+    letter-spacing: -0.03em
 }
 
 .hero-handmade {
@@ -124,14 +29,13 @@ img {
 }
 
 .hero-btn {
-    color: var(--white, #FCF9F9);
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -.04em;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     display: flex;
-    height: 50px;
+    height: 49px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -141,17 +45,10 @@ img {
     padding: 14px 36px;
     transition: border-color .25s cubic-bezier(.4,0,.2,1);
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 70px;
     max-width: 155px
 }
 
-.hero-btn:hover,.hero-btnn:focus {
-    border-color: var(--yellow, #ECD979)
-}
-
-.hero-icon-btn {
-    fill: var(--yellow, #ECD979)
-}
 
 .hero-img {
     border-radius: 4px
@@ -160,11 +57,7 @@ img {
 .hero-img-ukraine {
     display: none
 }
-
-.hero-handmade-svg {
-    fill: var(--yellow, #ECD979)
 }
-
 
 @media screen and (min-width: 768px) {
     .container {
@@ -184,7 +77,7 @@ img {
     .hero-title {
         font-size: 54px;
         line-height: 1.19;
-        letter-spacing: -.03em;
+        letter-spacing: -0.03em;
         max-width: 549px
     }
 
@@ -199,12 +92,8 @@ img {
         right: 32px
     }
 
-    .hero-handmade-svg {
-        fill: var(--yellow, #ECD979)
-    }
-
+   
     .hero-handmade-text {
-        color: #fcf9f966;
         text-align: center;
         font-size: 16px;
         line-height: normal;
@@ -277,6 +166,3 @@ img {
         width: 100%
     }
 }
-
-
-
