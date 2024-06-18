@@ -1,4 +1,3 @@
-
 *,*:before,*:after {
     padding: 0;
     margin: 0;
@@ -6,10 +5,20 @@
     box-sizing: border-box
 }
 
-h1,p {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     font-weight: inherit;
     font-size: inherit
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+ul,ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0
 }
 
 a {
@@ -18,7 +27,7 @@ a {
     cursor: pointer
 }
 
-button {
+input,button,textarea,select {
     font: inherit
 }
 
@@ -33,15 +42,17 @@ button {
 button {
     cursor: pointer
 }
+p:last-child {
+    margin-bottom: 0
+}
 
 img {
     display: block;
     max-width: 100%;
     height: auto
+}
 
-  }
-  
-  html,body {
+html,body {
     font-family: Manrope,sans-serif;
     font-size: 16px;
     background-color: #1c2225;
@@ -49,54 +60,17 @@ img {
     scroll-behavior: smooth
 }
 
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .container {
+.container {
     max-width: 375px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto
 }
 
-  
-
-/* ===HERO=== */
-    
 @media screen and (min-width: 768px) {
-    .container {
-        max-width:768px;
-        padding-left: 32px;
-        padding-right: 32px
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width:1280px;
-        padding-left: 20px;
-        padding-right: 20px
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .container {
-        max-width:1440px;
-        padding-left: 18px;
-        padding-right: 18px
-    }
+    .hero {
+    padding-top: 60px;
+    padding-bottom: 80px
 }
 
 .hero-container {
@@ -131,7 +105,7 @@ img {
     letter-spacing: -.04em;
     text-transform: uppercase;
     display: flex;
-    height: 50px;
+    height: 49px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -141,7 +115,7 @@ img {
     padding: 14px 36px;
     transition: border-color .25s cubic-bezier(.4,0,.2,1);
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 70px;
     max-width: 155px
 }
 
@@ -160,11 +134,7 @@ img {
 .hero-img-ukraine {
     display: none
 }
-
-.hero-handmade-svg {
-    fill: var(--yellow, #ECD979)
 }
-
 
 @media screen and (min-width: 768px) {
     .container {
@@ -277,6 +247,3 @@ img {
         width: 100%
     }
 }
-
-
-
